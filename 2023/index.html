@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rise Up - La Dernière Prédiction</title>
+	</head>
+	<body>
+		<h1>
+			<span class="logo-ru">Rise Up</span>
+			<br />
+			<span class="logo-subtitle">
+				association et troupe de comédie musicale
+			</span>
+		</h1>
+		<div class="affiche-container">
+			<p class="presente-sa-creation">présente sa création</p>
+			<!--
+			<div class="dates-lieu">
+				<h2 class="dates">les 15 et 16 septembre</h2>
+				<h3 class="lieu">au Théatre André Malraux de Rueil-Malmaison</h3>
+			</div>
+			-->
+			<div id="fo-vnir" class="fo-vnir"><span>Prenez part au village</span></div>
+			<h2 class="titre-prediction"><span>La Dernière Prédiction</span></h2>
+			<div class="loup-fg-right"></div>
+			<div class="loup-fg-left">˜</div>
+			<div class="agathe"></div>
+			<div class="danseuses-fg"></div>
+			<div class="feu"></div>
+			<div class="ombre-feu"></div>
+			<div class="danseuses-bg"></div>
+			<div class="loup-bg-right"></div>
+			<div class="loups-bg"></div>
+			<div class="ombres-loups-couche-2"></div>
+			<div class="ombres-loups-couche-1"></div>
+		</div>
+		<div class="info-container">
+		<h2 id="rpz">3 représentations</h2>
+		<p>au <a href="https://www.tam.fr/">théâtre André Malraux</a> de Rueil-Malmaison<p>
+		<ul>
+			<li>
+				<a href="https://www.helloasso.com/associations/rise-up-comedie-musicale/evenements/la-derniere-prediction" title="Prendre ma place"> 
+					Vendredi 15 septembre à <b>20h</b>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.helloasso.com/associations/rise-up-comedie-musicale/evenements/la-derniere-prediction-16-septembre-15h30" title="Prendre ma place">
+					Samedi 16 septembre à <b>15h30</b>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.helloasso.com/associations/rise-up-comedie-musicale/evenements/la-derniere-prediction-16-septembre-20h30" title="Prendre ma place">
+					Samedi 16 septembre à <b>20h</b>
+				</a>
+			</li>
+		</ul>
+		<p><em>Attention, certaines scènes contiennent des violences sexistes, sexuelles, homophobes, qui pourraient ne pas convenir à des personnes jeunes ou ayant connu des événements traumatisants. Nous contacter pour plus d'informations.</em> Les mineurs sont sous l'entière responsabilité de leurs parents.</p>
+	</div>
+	<div class="resume">
+			<h2>Lorsque le village s'endort...</h2>
+			<p>...s'éveillent de mystérieux protecteurs, surnommés «&nbsp;les loups-garous&nbsp;». Ces justiciers masqués auraient, d'après les légendes, remporté la guerre contre les maléfiques sorcières, dont le souvenir hante encore le village. Ici, la méfiance, la violence et la manipulation continuent, de jour comme de nuit.</p>
+			<p>Agathe, déterminée à suivre les traces de son défunt père, souhaite découvrir les loups pour rejoindre leurs rangs. Mais, dit-on, les sorcières pourraient être plus proches qu'on ne le croit.</p>
+			<p>Secondée par Ouma la vieille conteuse, Nour et Lucie les guérisseuses, et sa tante Artémis, Agathe quête la vérité sur elle-même, sa famille et ses croyances. Ses découvertes pourraient provoquer Anton, l'ambitieux maire, prêt à tout pour conserver l'ordre et gouverner sans partage.</p>
+		</div>
+	<div class="info-container">
+		<h2>Accès</h2>
+		<p>9 Place des Arts, 92500 Rueil-Malmaison. RER A, bus 144, 244, 258 (Rueil Ville).</p>
+		<h2>Billetterie</h2>
+		<p><a class="cta-billetterie" href="https://www.helloasso.com/associations/rise-up-comedie-musicale">Billetterie HelloAsso</a></p>
+		<h2>Liens</h2>
+		<h3>Nos partenaires</h3>
+		<p>le <a href="https://www.crous-paris.fr/">CROUS de Paris</a> - la <a href="https://cvec.etudiant.gouv.fr/">CVEC</a> - le FSDIE de la <a href="http://www.univ-paris3.fr/">Sorbonne Nouvelle</a> - le <a href="https://www.sarthe.fr/culture-sport-tourisme/culture-patrimoine/accompagner-developpement-artistique-et-culturel-des-territoires/artistes-en-sarthe">réseau départemental des scènes de la Sarthe</a></p>
+		<h3>Nos réseaux sociaux</h3>
+		<p><a href="https://instagram.com/riseup_comedie_musicale/">Instagram</a> - <a href="https://fr.linkedin.com/company/rise-up-com%C3%A9die-musicale">Linkedin</a> - <a href="https://www.facebook.com/LeRiseUp/">le Facebook</a></p>
+		<p style="font-size: 0.7em; margin-top: 10em;">2023 - le réseau inter-écoles des spectacles étudiants des universités de Paris - association 1901 déclarée à la préfecture de Paris - hébergement Ionos - direction de la publication par lae président.e de l'association - contact: <span id="e2f">cliquez ici</span></p>
+		</div>
+	</body>
+	<script>
+	const s = document.getElementById("e2f");
+	function fill() {
+		console.log(s);
+		const asso = atob("cmlzZXVw");
+		const edition = 3+1;
+		const domaine = new URL(window.location.href).hostname;
+		const full = `${asso}${edition}@${domaine}`;
+		s.innerHTML = `<a href="mailto:${full}">${full}</a>`;
+	}
+	s.addEventListener("click", fill);
+
+
+
+	document.getElementById('fo-vnir').addEventListener('click', function (e) {
+
+        document.getElementById('rpz').scrollIntoView({
+            behavior: 'smooth'
+        });
+});
+	</script>
+</html>

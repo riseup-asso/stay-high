@@ -1,0 +1,237 @@
+body {
+	font-family: 'Garamond', 'Adobe Garamond', 'Apple Garamond', 'Sabon', 'Minion', 'Galliard', 'Eldorado', 'Noto Serif', 'Aldhabi', 'Georgia', serif;
+	margin: 0;
+}
+
+h1 {
+	background-color: #714206;
+	color: #f0f0f0;
+	text-align: center;
+	line-height: 0em;
+	padding: 0.2em 0 0.5em 0;
+	margin: 0;
+	font-size: 1.5em;
+}
+.logo-ru {
+	content: url("assets/images/Logo_RiseUp_BN.png");
+	height: 3em;
+}
+.logo-subtitle {
+	font-size: 0.4em;
+	font-weight: normal;
+}
+
+.affiche-container {
+	transform: translateZ(0);
+	height: 35em; /* todo delete, used for testing gradients */
+	background: radial-gradient(circle, #ffcb01 0%, #a63e12 50%, #7d1f15 70%, #62000b 90%, #4d013c 100%);
+}
+
+p.presente-sa-creation {
+	z-index: 3;
+	position: relative;
+	font-size: 0.7em;
+	text-align: center;
+	margin: 0;
+	color: #fbcd9c;
+}
+
+h2.titre-prediction {
+	text-align: center;
+	margin: 0.4em;
+	z-index: 50;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: block;
+	height: 30%;
+}
+h2.titre-prediction > span {
+	display: block;
+	height: 100%;  /* follows parent: h2 */
+	content: url("assets/images/titre.svg");
+}
+
+div.fo-vnir {
+	position: fixed;
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 12;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div.fo-vnir > p {
+	color: #ffe4e8;
+	text-align: center;
+	font-size: 2em;
+	font-variant-caps: small-caps;
+	margin: 0;
+	text-shadow: 0 0 5px rgba(0,0,0,1);
+}
+div.fo-vnir > span {
+	height: 1em;
+	content: url("assets/images/arrow-down.svg");
+}
+
+.loup-fg-right {
+	z-index: 10;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	transform: translate(-100;-100%);
+	max-height: 45%;
+	max-width: 40%;
+	content: url("assets/images/loup-fg-right.png");
+}
+.loup-fg-left {
+	z-index: 9;
+	position: fixed;
+	bottom: 0%;
+	left: -2%;
+	max-height: 50%;
+	max-width: 76%;
+	content: url("assets/images/loup-fg-left.png");
+}
+
+.agathe {
+	z-index: 8;
+	position: fixed;
+	top: 62%;
+	left: 47%;
+	content: url("assets/images/agathe.png");
+	transform: translate(-50%, -50%);
+	height: 30%;
+}
+.danseuses-fg {
+	z-index: 7;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	content: url("assets/images/danseuses-fg.png");
+	transform: translate(-50%, -50%);
+	height: 50%;
+}
+.feu {
+	z-index: 6;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	content: url("assets/images/feu.png");
+	transform: translate(-50%, -50%);
+	height: 40%;
+}
+.ombre-feu {
+	z-index: 6;
+	position: fixed;
+	top: 72%;
+	left: 50%;
+	content: url("assets/images/ombre-feu.png");
+	transform: translate(-50%, -50%);
+	height: 10%;
+	opacity: 0.4;
+}
+.danseuses-bg {
+	z-index: 5;
+	position: fixed;
+	top: 40%;
+	left: 44.5%;
+	content: url("assets/images/danseuses-bg.png");
+	transform: translate(-50%, -50%);
+	height: 30%;
+}
+
+
+.loup-bg-right {
+	z-index: 4;
+	position: fixed;
+	top: 40%;
+	right: 0;
+	transform: translate(0,-50%);
+	max-height: 50%;
+
+	content: url("assets/images/loup-bg-right.png");
+}
+
+
+.loups-bg {
+	z-index: 3;
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-height: 70%;
+
+	content: url("assets/images/loups-bg.png");
+}
+
+.ombres-loups-couche-2  {
+	filter: blur(10px);
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: 1px solid magenta;
+	height: 100%;
+	width: 100%;
+	content: url("assets/images/ombres-couche-2.svg");
+}
+.ombres-loups-couche-1  {
+	filter: blur(10px);
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: 1px solid magenta;
+	height: 100%;
+	width: 100%;
+	content: url("assets/images/ombres-couche-1.svg");
+}
+
+.info-container {
+	padding: 2em;
+  	color: #5e0738;
+	background-color: #d9ab83;
+}
+
+.info-container a {
+	color: inherit;
+	text-decoration: underline dotted;
+}
+
+a.cta-billetterie {
+	display: inline-block;
+	background-color: #b05a5a;
+	color: white;
+	padding: 1em;
+	border-radius: 1em;
+	font-size: 1.2em;
+}
+
+div.resume {
+	background: linear-gradient(0deg, #2b0b1e 0%, #4c1f21 100%);
+	color: #ece6dc;
+	margin: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 1em;
+}
+.resume > * {
+	max-width: 30em;
+	margin: 0.5em;
+}
+
+@media screen and (min-width: 930px){
+	h2.titre-prediction {
+		height: 40%;
+	}
+	.logo-subtitle {
+		font-size: 0.6em;
+	}
+}
