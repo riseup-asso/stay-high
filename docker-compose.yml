@@ -1,5 +1,9 @@
 name: riseup-stayhigh  # for serving static files
 
+networks:
+  proxy:
+    external: true
+
 services:
   web:
     image: nginx
@@ -13,4 +17,6 @@ services:
       traefik.http.routers.riseup-stayhigh-web.rule: Host(`riseup-asso.fr`)
       traefik.http.services.nextcloud-web.loadbalancer.server.port: 8080
       traefik.enable: true
+    networks:
+      - proxy
 
