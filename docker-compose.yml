@@ -1,0 +1,16 @@
+name: riseup-stayhigh  # for serving static files
+
+services:
+  web:
+    image: nginx
+    volumes:
+     - ./html:/usr/share/nginx/html:ro
+    environment:
+     - NGINX_HOST=riseup-asso.fr
+     - NGINX_PORT=8080
+    labels:
+      traefik.http.routers.riseup-stayhigh-web.entrypoints: websecure
+      traefik.http.routers.riseup-stayhigh-web.rule: Host(`riseup-asso.fr`)
+      traefik.http.services.nextcloud-web.loadbalancer.server.port: 8080
+      traefik.enable: true
+
